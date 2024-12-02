@@ -10,7 +10,7 @@ html, body {
 /* Wrapper for All Sections */
 .content-wrapper {
   display: flex;
-  justify-content: space-between; /* Ensure sections are evenly distributed */
+  justify-content: space-between; /* Space out the sections evenly */
   align-items: center; /* Vertically align sections */
   height: 100vh;
   width: 100%;
@@ -25,7 +25,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 15px; /* Space between the link boxes */
-  width: 20%; /* Fixed width for afrolinks section */
+  width: 20%;
 }
 
 /* Afrolinks Boxes */
@@ -80,7 +80,7 @@ html, body {
 
 .spinning-image {
   width: 100%;
-  max-width: 150px; /* Ensure the spinning image is small and centered */
+  max-width: 150px; /* Small spinning logo */
   height: auto;
   animation: spin 3s infinite;
 }
@@ -130,16 +130,17 @@ html, body {
   }
 }
 
-/* Right Section (Instagram Embed) */
+/* Instagram Container (Right Section) */
 .instagram-container {
-  flex: 1; /* Ensure the Instagram embed occupies equal space */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Center the embed horizontally */
-  align-items: center; /* Center the embed vertically */
+  justify-content: center; /* Horizontally center the embed */
+  align-items: center; /* Vertically center the embed */
 }
 
 .instagram-container blockquote.instagram-media {
-  max-width: 400px; /* Limit the width of the embed */
+  max-width: 400px; /* Limit the embed size */
   width: 100%;
+  margin: 0 auto;
   border-radius: 10px;
 }
