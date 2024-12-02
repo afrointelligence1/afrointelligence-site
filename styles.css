@@ -3,7 +3,7 @@
   display: flex; /* Flexbox layout for side-by-side alignment */
   justify-content: center; /* Center the entire content horizontally */
   align-items: center; /* Align content vertically */
-  gap: 20px; /* Space between the left and right sections */
+  gap: 5px; /* Space between the left and right sections */
   height: 100vh; /* Full viewport height */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
   padding: 20px; /* Add padding to avoid edge clipping */
