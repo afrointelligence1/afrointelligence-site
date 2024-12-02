@@ -5,18 +5,16 @@
   align-items: center; /* Align content vertically */
   gap: 10px; /* Space between the left and right sections */
   height: 100vh; /* Full viewport height */
-  max-width: 1200px; /* Limit overall width of the content */
-  margin: auto; /* Center the content horizontally */
+  width: 100%; /* Use full width of the page */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 0 20px; /* Reduce horizontal padding */
+  padding: 0 20px; /* Minimal padding to avoid clipping edges */
   box-sizing: border-box; /* Ensure padding doesn’t affect layout width */
 }
 
 /* Left Section (Spinning Logo and Text) */
 .container {
   text-align: center;
-  flex: 1; /* Left section shares space equally */
-  max-width: 550px; /* Limit the maximum width of the left content */
+  flex: 1; /* Left section takes up equal space */
   color: white; /* Ensure text is visible */
 }
 
@@ -80,8 +78,7 @@
 
 /* Right Section (Instagram Embed) */
 .instagram-container {
-  flex: 1; /* Right section shares space equally */
-  max-width: 550px; /* Limit the maximum width of the right content */
+  flex: 1; /* Right section takes up equal space */
   display: flex; /* Enables centering inside the section */
   justify-content: center; /* Center the Instagram embed horizontally */
   align-items: center; /* Center the Instagram embed vertically */
