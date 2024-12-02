@@ -10,12 +10,13 @@ html, body {
 /* Wrapper for All Sections */
 .content-wrapper {
   display: flex;
-  justify-content: space-between; /* Space out the sections evenly */
+  justify-content: center; /* Center all sections tightly */
   align-items: center; /* Vertically align sections */
   height: 100vh;
   width: 100%;
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 20px;
+  padding: 0 10px; /* Minimal horizontal padding */
+  gap: 20px; /* Space between sections */
   box-sizing: border-box;
 }
 
@@ -24,18 +25,18 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* Space between the link boxes */
-  width: 25%; /* Increased width for the links section */
-  padding-left: 40px; /* Add padding to the left */
+  gap: 10px; /* Minimal space between the link boxes */
+  width: 20%; /* Fixed width for the links section */
+  padding: 10px; /* Add padding around links */
 }
 
 /* Afrolinks Boxes */
 .link-box {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px; /* Make links narrower */
   background-color: white;
   text-align: center;
-  padding: 15px;
+  padding: 10px; /* Smaller padding for compact design */
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, background-color 0.2s;
@@ -44,7 +45,7 @@ html, body {
 .link-box a {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Smaller text size */
   font-weight: bold;
 }
 
@@ -62,13 +63,13 @@ html, body {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px; /* Adds space above the icons */
+  gap: 5px; /* Smaller space between icons */
+  margin-top: 10px; /* Minimal space above icons */
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
+  width: 25px; /* Smaller icons */
+  height: 25px;
   object-fit: contain;
 }
 
@@ -77,11 +78,12 @@ html, body {
   text-align: center;
   flex: 1;
   color: white;
+  max-width: 400px; /* Center section is compact */
 }
 
 .spinning-image {
   width: 100%;
-  max-width: 150px; /* Small spinning logo */
+  max-width: 120px; /* Smaller spinning logo */
   height: auto;
   animation: spin 3s infinite;
 }
@@ -97,10 +99,10 @@ html, body {
 }
 
 .coming-soon {
-  font-size: 4rem;
+  font-size: 2.5rem; /* Smaller "Coming Soon" text */
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   color: white;
 }
 
@@ -135,13 +137,12 @@ html, body {
 .instagram-container {
   flex: 1;
   display: flex;
-  justify-content: flex-end; /* Align Instagram closer to the center */
-  align-items: center; /* Vertically center the embed */
-  padding-right: 25px; /* Reduced padding to balance layout */
+  justify-content: center; /* Center the embed */
+  align-items: center;
+  max-width: 400px; /* Ensure the embed is compact */
 }
 
 .instagram-container blockquote.instagram-media {
-  max-width: 350px; /* Reduced the maximum size of the embed */
   width: 100%;
   margin: 0;
   border-radius: 10px;
