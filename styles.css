@@ -1,9 +1,9 @@
 /* Wrapper for Left and Right Sections */
 .content-wrapper {
   display: flex; /* Flexbox layout for side-by-side alignment */
-  justify-content: center; /* Center the entire content horizontally */
+  justify-content: space-between; /* Distribute space between left and right sections */
   align-items: center; /* Align content vertically */
-  gap: 5px; /* Space between the left and right sections */
+  gap: 10px; /* Reduced space between sections */
   height: 100vh; /* Full viewport height */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
   padding: 20px; /* Add padding to avoid edge clipping */
@@ -13,8 +13,9 @@
 /* Left Section (Spinning Logo and Text) */
 .container {
   text-align: center;
-  flex: 0.8; /* Left section takes up equal space */
+  flex: 0.9; /* Slightly reduce space for the left section */
   color: white; /* Ensure text is visible */
+  margin-bottom: 10px; /* Reduced space under the "Coming Soon" text */
 }
 
 /* Spinning Image */
@@ -76,11 +77,12 @@
 
 /* Right Section (Instagram Embed) */
 .instagram-container {
-  flex: 1.2; /* Right section takes up equal space */
+  flex: 1.1; /* Slightly increase space for the right section */
   display: flex; /* Enables centering inside the section */
   justify-content: center; /* Center the Instagram embed horizontally */
   align-items: center; /* Center the Instagram embed vertically */
   height: 100%; /* Ensures the right section matches the left section height */
+  margin-top: -10px; /* Adjust the vertical alignment of the Instagram embed */
 }
 
 /* Instagram Embed Styling */
