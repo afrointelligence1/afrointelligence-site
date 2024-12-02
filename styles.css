@@ -10,13 +10,13 @@ html, body {
 /* Wrapper for All Sections */
 .content-wrapper {
   display: flex;
-  justify-content: space-evenly; /* Distribute sections evenly and tightly */
+  justify-content: space-between; /* Space out left, center, and right sections */
   align-items: center; /* Vertically align sections */
   height: 100vh; /* Full viewport height */
-  width: 100%;
+  width: 100%; /* Full width */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
   padding: 0 10px; /* Minimal horizontal padding */
-  gap: 0; /* No extra space between sections */
+  gap: 10px; /* Slight space between sections */
   box-sizing: border-box;
 }
 
@@ -24,10 +24,10 @@ html, body {
 .afrolinks-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end; /* Align links closer to the center */
   gap: 10px; /* Minimal space between the link boxes */
-  width: 15%; /* Adjusted width to balance layout */
-  padding: 5px; /* Add small padding for alignment */
+  width: 15%; /* Compact width for links section */
+  padding-right: 10px; /* Pull closer to the center */
 }
 
 /* Afrolinks Boxes */
