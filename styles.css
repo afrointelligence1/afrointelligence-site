@@ -10,13 +10,13 @@ html, body {
 /* Wrapper for All Sections */
 .content-wrapper {
   display: flex;
-  justify-content: space-between; /* Space out left, center, and right sections */
+  justify-content: center; /* Center all sections tightly */
   align-items: center; /* Vertically align sections */
   height: 100vh; /* Full viewport height */
   width: 100%; /* Full width */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 0 10px; /* Minimal horizontal padding */
-  gap: 10px; /* Slight space between sections */
+  gap: 5px; /* Minimal gap between sections */
+  padding: 0; /* No extra padding */
   box-sizing: border-box;
 }
 
@@ -25,9 +25,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Align links closer to the center */
-  gap: 10px; /* Minimal space between the link boxes */
+  gap: 5px; /* Minimal space between the link boxes */
   width: 15%; /* Compact width for links section */
-  padding-right: 10px; /* Pull closer to the center */
 }
 
 /* Afrolinks Boxes */
@@ -45,7 +44,7 @@ html, body {
 .link-box a {
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 1rem; /* Compact font size */
   font-weight: bold;
 }
 
@@ -64,11 +63,11 @@ html, body {
   display: flex;
   justify-content: center;
   gap: 5px; /* Minimal space between icons */
-  margin-top: 10px; /* Small margin above icons */
+  margin-top: 5px; /* Small margin above icons */
 }
 
 .social-icon {
-  width: 25px; /* Smaller icons */
+  width: 25px; /* Small icons */
   height: 25px;
   object-fit: contain;
 }
@@ -76,13 +75,13 @@ html, body {
 /* Center Section (Spinning Logo and Coming Soon) */
 .container {
   text-align: center;
-  flex: 0.8; /* Adjusted width for tighter centering */
+  flex: 0.7; /* Reduce the size of the center section */
   color: white;
 }
 
 .spinning-image {
   width: 100%;
-  max-width: 120px; /* Smaller spinning logo */
+  max-width: 100px; /* Smaller spinning logo */
   height: auto;
   animation: spin 3s infinite;
 }
@@ -98,10 +97,10 @@ html, body {
 }
 
 .coming-soon {
-  font-size: 2.5rem; /* Adjust text size for tighter alignment */
+  font-size: 2rem; /* Compact text size */
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem; /* Reduce spacing between letters */
   color: white;
 }
 
@@ -134,11 +133,11 @@ html, body {
 
 /* Instagram Container (Right Section) */
 .instagram-container {
-  flex: 0.8; /* Compact the space for Instagram embed */
+  flex: 0.7; /* Compact space for Instagram embed */
   display: flex;
-  justify-content: center; /* Center the embed */
+  justify-content: flex-start; /* Align closer to the center */
   align-items: center;
-  max-width: 400px; /* Ensure the embed stays compact */
+  max-width: 300px; /* Compact width for the embed */
 }
 
 .instagram-container blockquote.instagram-media {
