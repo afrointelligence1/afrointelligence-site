@@ -1,3 +1,12 @@
+/* Reset default margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the body spans the full width */
+  height: 100%; /* Ensure the body spans the full height */
+  box-sizing: border-box; /* Include padding and borders in element width/height */
+}
+
 /* Wrapper for Left and Right Sections */
 .content-wrapper {
   display: flex; /* Flexbox layout for side-by-side alignment */
@@ -5,10 +14,10 @@
   align-items: center; /* Align content vertically */
   gap: 10px; /* Space between the left and right sections */
   height: 100vh; /* Full viewport height */
-  width: 100%; /* Use full width of the page */
+  width: 100%; /* Ensure the wrapper spans the entire width */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 0 20px; /* Minimal padding to avoid clipping edges */
-  box-sizing: border-box; /* Ensure padding doesn’t affect layout width */
+  padding: 0 10px; /* Minimal padding to prevent edge clipping */
+  box-sizing: border-box; /* Include padding in total dimensions */
 }
 
 /* Left Section (Spinning Logo and Text) */
