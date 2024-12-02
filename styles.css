@@ -26,7 +26,7 @@ html, body {
   align-items: center;
   gap: 15px; /* Space between the link boxes */
   width: 25%; /* Increased width for the links section */
-  padding-left: 20px; /* Add padding to the left */
+  padding-left: 40px; /* Add padding to the left */
 }
 
 /* Afrolinks Boxes */
