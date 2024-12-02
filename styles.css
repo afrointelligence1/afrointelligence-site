@@ -76,7 +76,7 @@
 
 /* Right Section (Instagram Embed) */
 .instagram-container {
-  flex: 1; /* Right section takes up equal space */
+  flex: 0.2; /* Right section takes up equal space */
   display: flex; /* Enables centering inside the section */
   justify-content: center; /* Center the Instagram embed horizontally */
   align-items: center; /* Center the Instagram embed vertically */
