@@ -7,11 +7,11 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Wrapper for Left and Center Sections */
+/* Wrapper for All Sections */
 .content-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Ensure sections are evenly distributed */
+  align-items: center; /* Vertically align sections */
   height: 100vh;
   width: 100%;
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
@@ -19,13 +19,13 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Afrolinks Container */
+/* Afrolinks Container (Left Section) */
 .afrolinks-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px; /* Space between the link boxes */
-  width: 20%;
+  width: 20%; /* Fixed width for afrolinks section */
 }
 
 /* Afrolinks Boxes */
@@ -95,7 +95,6 @@ html, body {
   }
 }
 
-/* Coming Soon Text */
 .coming-soon {
   font-size: 4rem;
   font-weight: bold;
@@ -129,4 +128,18 @@ html, body {
     opacity: 0;
     transform: scale(1.3);
   }
+}
+
+/* Right Section (Instagram Embed) */
+.instagram-container {
+  flex: 1; /* Ensure the Instagram embed occupies equal space */
+  display: flex;
+  justify-content: center; /* Center the embed horizontally */
+  align-items: center; /* Center the embed vertically */
+}
+
+.instagram-container blockquote.instagram-media {
+  max-width: 400px; /* Limit the width of the embed */
+  width: 100%;
+  border-radius: 10px;
 }
