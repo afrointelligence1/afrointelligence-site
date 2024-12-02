@@ -3,16 +3,18 @@
   display: flex; /* Flexbox layout for side-by-side alignment */
   justify-content: center; /* Center the entire content horizontally */
   align-items: center; /* Align content vertically */
-  gap: 20px; /* Space between the left and right sections (Key Change) */
+  gap: 20px; /* Space between the left and right sections */
   height: 100vh; /* Full viewport height */
-  padding: 20px; /* Add some space around the content */
-  box-sizing: border-box; /* Ensure padding doesn't break layout */
+  background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Restore background gradient */
+  padding: 20px; /* Add padding to avoid edge clipping */
+  box-sizing: border-box; /* Ensure padding doesn’t affect layout */
 }
 
 /* Left Section (Spinning Logo and Text) */
 .container {
-  text-align: center; /* Center align the text */
+  text-align: center;
   flex: 1; /* Left section takes up equal space */
+  color: white; /* Ensure text is visible */
 }
 
 /* Spinning Image */
@@ -38,7 +40,7 @@
 
 /* Coming Soon Text */
 .coming-soon {
-  color: white;
+  color: white; /* Ensure text color contrasts with background */
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -76,9 +78,9 @@
 .instagram-container {
   flex: 1; /* Right section takes up equal space */
   display: flex; /* Enables centering inside the section */
-  justify-content: center; /* Center the Instagram embed horizontally (Key Change) */
-  align-items: center; /* Center the Instagram embed vertically (Key Change) */
-  height: 100%; /* Ensures the right section matches the left section height (Key Change) */
+  justify-content: center; /* Center the Instagram embed horizontally */
+  align-items: center; /* Center the Instagram embed vertically */
+  height: 100%; /* Ensures the right section matches the left section height */
 }
 
 /* Instagram Embed Styling */
