@@ -15,8 +15,8 @@ html, body {
   height: 100vh; /* Full viewport height */
   width: 100%; /* Full width */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  gap: 5px; /* Minimal gap between sections */
   padding: 0; /* No extra padding */
+  gap: 0; /* No gap between sections */
   box-sizing: border-box;
 }
 
@@ -24,9 +24,10 @@ html, body {
 .afrolinks-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Align links closer to the center */
-  gap: 5px; /* Minimal space between the link boxes */
+  align-items: center; /* Align links and icons centrally */
+  gap: 5px; /* Minimal space between the link boxes and icons */
   width: 15%; /* Compact width for links section */
+  padding: 0; /* Remove extra padding */
 }
 
 /* Afrolinks Boxes */
@@ -61,7 +62,7 @@ html, body {
 /* Social Icons */
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center icons */
   gap: 5px; /* Minimal space between icons */
   margin-top: 5px; /* Small margin above icons */
 }
@@ -75,13 +76,13 @@ html, body {
 /* Center Section (Spinning Logo and Coming Soon) */
 .container {
   text-align: center;
-  flex: 0.7; /* Reduce the size of the center section */
+  flex: 0.8; /* Adjusted width for tighter centering */
   color: white;
 }
 
 .spinning-image {
   width: 100%;
-  max-width: 100px; /* Smaller spinning logo */
+  max-width: 120px; /* Smaller spinning logo */
   height: auto;
   animation: spin 3s infinite;
 }
@@ -133,7 +134,7 @@ html, body {
 
 /* Instagram Container (Right Section) */
 .instagram-container {
-  flex: 0.7; /* Compact space for Instagram embed */
+  flex: 0.8; /* Compact the space for Instagram embed */
   display: flex;
   justify-content: flex-start; /* Align closer to the center */
   align-items: center;
