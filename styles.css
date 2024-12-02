@@ -8,7 +8,7 @@
   max-width: 1200px; /* Limit overall width of the content */
   margin: auto; /* Center the content horizontally */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 0 5px; /* Reduce horizontal padding */
+  padding: 0 20px; /* Reduce horizontal padding */
   box-sizing: border-box; /* Ensure padding doesn’t affect layout width */
 }
 
@@ -23,7 +23,7 @@
 /* Spinning Image */
 .spinning-image {
   width: 100%; /* Adjust to fill the available space */
-  max-width: 500px; /* Limit the size of the image */
+  max-width: 275px; /* Limit the size of the image */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Ensure the entire image fits inside */
   animation: spin 3s infinite; /* Link to spin animation */
