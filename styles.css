@@ -20,7 +20,7 @@ body {
   width: 500px; /* Force image width */
   height: 500px; /* Force image height */
   margin-bottom: 20px;
-  object-fit: cover; /* Ensures the image fills the container without distortion */
+  object-fit: contain; /* Ensures the image fills the container without distortion */
   animation: spin 3s infinite; /* Links to spin animation */
 }
 
