@@ -22,8 +22,8 @@ body {
 
 /* Spinning Image Styling */
 .spinning-image {
-  width: 500px; /* Force image width */
-  height: 500px; /* Force image height */
+  width: 275px; /* Force image width */
+  height: 275px; /* Force image height */
   margin-bottom: 20px;
   align-items: center;
   object-fit: contain; /*Ensure the whole image fits inside the box */
