@@ -15,6 +15,11 @@ body {
   text-align: center;
 }
 
+/* Spinning Graphic Container */
+.spinning-container {
+  margin-bottom: 20px; /* Space between the spinning graphic and text */
+}
+
 /* Spinning Image Styling */
 .spinning-image {
   width: 500px; /* Force image width */
