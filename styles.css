@@ -1,22 +1,13 @@
-/* Reset default margins and padding */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%; /* Ensure the body spans the full width */
-  height: 100%; /* Ensure the body spans the full height */
-  box-sizing: border-box; /* Include padding and borders in element width/height */
-}
-
 /* Wrapper for Left and Right Sections */
 .content-wrapper {
   display: flex; /* Flexbox layout for side-by-side alignment */
-  justify-content: space-between; /* Distribute space between left and right sections */
+  justify-content: flex-start; /* Align sections tightly to the left */
   align-items: center; /* Align content vertically */
-  gap: 10px; /* Space between the left and right sections */
+  gap: 5px; /* Reduced space between the left and right sections */
   height: 100vh; /* Full viewport height */
   width: 100%; /* Ensure the wrapper spans the entire width */
   background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
-  padding: 0 10px; /* Minimal padding to prevent edge clipping */
+  padding: 0; /* Remove padding around the wrapper */
   box-sizing: border-box; /* Include padding in total dimensions */
 }
 
@@ -25,6 +16,7 @@ html, body {
   text-align: center;
   flex: 1; /* Left section takes up equal space */
   color: white; /* Ensure text is visible */
+  margin-right: 0; /* Remove any margin on the right */
 }
 
 /* Spinning Image */
@@ -36,19 +28,6 @@ html, body {
   animation: spin 3s infinite; /* Link to spin animation */
 }
 
-/* Spin Animation */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  90% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* Coming Soon Text */
 .coming-soon {
   color: white; /* Ensure text color contrasts with background */
@@ -58,39 +37,14 @@ html, body {
   letter-spacing: 0.5rem;
 }
 
-.coming-soon span {
-  display: inline-block;
-  animation: flash 1.5s infinite;
-}
-
-.coming-soon span:nth-child(1) { animation-delay: 0s; }
-.coming-soon span:nth-child(2) { animation-delay: 0.2s; }
-.coming-soon span:nth-child(3) { animation-delay: 0.4s; }
-.coming-soon span:nth-child(4) { animation-delay: 0.6s; }
-.coming-soon span:nth-child(5) { animation-delay: 0.8s; }
-.coming-soon span:nth-child(6) { animation-delay: 1s; }
-.coming-soon span:nth-child(7) { animation-delay: 1.2s; }
-.coming-soon span:nth-child(8) { animation-delay: 1.4s; }
-.coming-soon span:nth-child(9) { animation-delay: 1.6s; }
-.coming-soon span:nth-child(10) { animation-delay: 1.8s; }
-
-@keyframes flash {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0;
-    transform: scale(1.3);
-  }
-}
-
 /* Right Section (Instagram Embed) */
 .instagram-container {
   flex: 1; /* Right section takes up equal space */
   display: flex; /* Enables centering inside the section */
   justify-content: center; /* Center the Instagram embed horizontally */
   align-items: center; /* Center the Instagram embed vertically */
+  margin-left: 0; /* Remove any margin on the left */
+  padding: 0; /* Remove padding inside the Instagram container */
 }
 
 /* Instagram Embed Styling */
