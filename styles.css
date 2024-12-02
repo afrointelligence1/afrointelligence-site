@@ -1,16 +1,18 @@
 /* Wrapper for Left and Right Sections */
 .content-wrapper {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space between left and right content */
-  align-items: center; /* Vertically align the content */
+  display: flex; /* Flexbox layout for side-by-side alignment */
+  justify-content: center; /* Center the entire content horizontally */
+  align-items: center; /* Align content vertically */
+  gap: 20px; /* Space between the left and right sections (Key Change) */
   height: 100vh; /* Full viewport height */
-  padding: 20px;
+  padding: 20px; /* Add some space around the content */
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
 }
 
 /* Left Section (Spinning Logo and Text) */
 .container {
-  text-align: center;
-  flex: 1; /* Take up equal space on the left */
+  text-align: center; /* Center align the text */
+  flex: 1; /* Left section takes up equal space */
 }
 
 /* Spinning Image */
@@ -72,15 +74,16 @@
 
 /* Right Section (Instagram Embed) */
 .instagram-container {
-  flex: 1; /* Take up equal space on the right */
-  display: flex;
-  justify-content: center; /* Center the Instagram post horizontally */
-  align-items: center; /* Center the Instagram post vertically */
+  flex: 1; /* Right section takes up equal space */
+  display: flex; /* Enables centering inside the section */
+  justify-content: center; /* Center the Instagram embed horizontally (Key Change) */
+  align-items: center; /* Center the Instagram embed vertically (Key Change) */
+  height: 100%; /* Ensures the right section matches the left section height (Key Change) */
 }
 
 /* Instagram Embed Styling */
 .instagram-container blockquote.instagram-media {
   max-width: 400px; /* Control the maximum width of the Instagram embed */
-  width: 100%;
+  width: 100%; /* Responsive scaling */
   border-radius: 10px; /* Optional: Add rounded corners */
 }
