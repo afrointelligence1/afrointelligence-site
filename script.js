@@ -6,8 +6,8 @@ const spinningImageSrc = "picksel.png"; // Main spinning image
 const tempImageSrc = "picksel-wink.png"; // Temporary wink image
 
 // Timing configurations
-const spinDuration = 4000; // Duration of one spin cycle (3 seconds)
-const tempImageDuration = 500; // Duration of wink image (0.5 seconds)
+const spinDuration = 4000; // Duration of one spin cycle (4 seconds)
+const tempImageDuration = 200; // Duration of wink image (0.2 seconds)
 
 // Function to swap the image temporarily
 function swapImage() {
