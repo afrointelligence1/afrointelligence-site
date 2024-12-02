@@ -5,7 +5,7 @@
   align-items: center; /* Align content vertically */
   gap: 20px; /* Space between the left and right sections */
   height: 100vh; /* Full viewport height */
-  background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Restore background gradient */
+  background: linear-gradient(45deg, #ff6ec4, #7873f5); /* Gradient background */
   padding: 20px; /* Add padding to avoid edge clipping */
   box-sizing: border-box; /* Ensure padding doesn’t affect layout */
 }
