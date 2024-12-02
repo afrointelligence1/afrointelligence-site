@@ -23,7 +23,7 @@
 /* Spinning Image */
 .spinning-image {
   width: 100%; /* Adjust to fill the available space */
-  max-width: 275px; /* Limit the size of the image */
+  max-width: 500px; /* Limit the size of the image */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Ensure the entire image fits inside */
   animation: spin 3s infinite; /* Link to spin animation */
