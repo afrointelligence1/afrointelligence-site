@@ -137,7 +137,7 @@ html, body {
   display: flex;
   justify-content: flex-end; /* Align Instagram closer to the center */
   align-items: center; /* Vertically center the embed */
-  padding-right: 10px; /* Reduced padding to balance layout */
+  padding-right: 25px; /* Reduced padding to balance layout */
 }
 
 .instagram-container blockquote.instagram-media {
